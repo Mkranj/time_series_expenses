@@ -1,16 +1,15 @@
 [tool.poetry]
 name = "time-series-expenses"
 version = "0.1.0"
-description = "Training a TS model on own expenses data"
+description = ""
 authors = ["Mkranj <mkranjcev6@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-numpy = "^1.26.4"
 pandas = "^2.2.2"
+numpy = "^1.26.4"
 prophet = "^1.1.5"
-
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
