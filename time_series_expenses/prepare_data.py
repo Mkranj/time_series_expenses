@@ -16,6 +16,11 @@ monthly = daily.resample("1MS").sum()
 # Remove 2021-09 because it's inaccurately low
 monthly.drop("2021-09-01", axis = 0, inplace = True)
 
+# The dataframe should have specific column names
+monthly.columns = ["y"]
+monthly["ds"] = monthly.index
+
+monthly.reset_index(drop = True)
 
 # EXPORTS
 # daily
